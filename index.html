@@ -10,22 +10,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
     <title>Unit Converter</title>
   </head>
   <body>
     <div class="main-container">
       <div class="input-container">
         <h1 class="heading">Metric/Imperial Unit Conversion</h1>
-        <div><input type="text" class="input-field" /></div>
+        <div><input type="number" id="input-field" /></div>
 
         <button id="convert-btn">Convert</button>
       </div>
       <div class="display-container">
         <div class="card">
           <p class="title-text">Length(Meter/Feet)</p>
-          <p id="length-text" class="content-text">
-            20 meters = 65.616 feet | 20 feet = 6.096 meters
-          </p>
+          <p id="length-text" class="content-text"></p>
         </div>
         <div class="card">
           <p class="title-text">Volume(Liters/Gallons)</p>
